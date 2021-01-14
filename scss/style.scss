@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600&display=swap');
+
+$primary: #e95e2a;
+$primary-overlay:rgba(0, 0, 0, 0.8);
+
+body {
+  margin-top: 100px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  // opacity: 0.9;
+  background: #333;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .social .fab {
+    color: #ef8c5e;
+    font-size: 40px;
+    margin: 5px;
+    padding-top: 5px;
+  }
+
+  .social .fab:hover {
+    color: $primary;
+  }
+}
+
+#showcase {
+  position: relative;
+  background: url('../img/background.jpg');
+  min-height: 900px;
+
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-family: 'Martel', serif !important;
+    }
+  }
+}
+
+#book {
+  position: relative;
+  background: url('../img/eerie.jpg');
+  min-height: 900px;
+
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-family: 'Martel', serif !important;
+    }
+
+  }
+}
+
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #e95e2a solid;
+
+}
+
+#thanks {
+
+  background: #333;
+  color: #ef8c5e;
+  align-items: center;
+  text-align: center;
+  max-height: 400px;
+
+
+  img {
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 50%;
+  }
+}
+
+#main-footer {
+
+  background: #333;
+
+  .social .fab {
+    color: #ef8c5e;
+    font-size: 40px;
+    margin: 10px;
+    padding-top: 10px;
+  }
+
+  .social .fab:hover {
+    color: $primary;
+  }
+}
+
+
+@media(max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+    // margin: -10px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+
+  #book {
+    min-height: 500px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.lead {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+
+
+  #thanks {
+    min-height: 650px;
+  }
+
+  #author {
+    min-height: 500px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+}
+
+
+@media(max-width: 1024px) {
+
+  #book {
+    min-height: 800px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+}
